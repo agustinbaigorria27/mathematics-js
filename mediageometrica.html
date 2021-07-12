@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Geometric Mean</title>
+</head>
+<body>
+    <header>
+        <div class="header__title">
+            <h1>
+                Geometric Mean
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="./index.html">Home</a>
+                <a class="orange-text" href="./figuras.html">Project1</a>
+                <a class="yellow-text" href="./descuentos.html">Project2</a>
+                <a class="pink-text" href="./promedio.html">Project3</a>
+                <a class="green-text" href="./mediageometrica.html">Project4</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main green">
+        <section class="problems__container">
+            <h2 class="green__title">Calculate your Geometric Mean</h2>
+            <p>What kind of use do i have for the Geometric Mean?</br>
+            </p>
+            <p> The Geometric Mean is most frequently used to calculate the growth rate. If for example the sales growth of a bussiness has been increasing by a 26%, 32%, etc, this would help us to find the annual average growth.</p>
+            <form onsubmit="return false;" action="">
+                <!--<label for="geometricInput"></label>--->
+                <input id="geometricInput" type="text" placeholder="Write your data. Ex: 26, 32, 78, etc..">
+                <button onclick="calcularMediaGeometrica()" class="button greenprimary">Geometric Mean</button>
+            </form>
+            <div class="answer__container">
+                <p>Your result is: </br></p>
+                <p class="answer__container--text-green" id="geometricResult"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <a href="https://github.com/agustinbaigorria27">Github</a>
+                <a href="https://www.linkedin.com/in/agustin-baigorria-b499851ba/">Linkedin</a>
+                <a href="https://twitter.com/Agustin74423711">Twitter</a>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./mediageometrica.js"></script>
+</body>
+</html>

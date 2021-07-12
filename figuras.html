@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculate the perimeter, diameter and area</title>
+</head>
+<body>
+    <header>
+        <div class="header__title">
+            <h1>
+                Calculate the perimeter, diameter and area
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="./index.html">Home</a>
+                <a class="yellow-text" href="./descuentos.html">Project2</a>
+                <a class="pink-text" href="./promedio.html">Project3</a>
+                <a class="green-text" href="./mediageometrica.html">Project4</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main orange">
+        <div class="main__container">
+            <section class="problems__container">
+                <h3 class="orange__title">Calculate the Area and Perimeter of a square</h3>
+                <div class="square__container">
+                </div>
+                <form action="">
+                    <label for="inputCuadrado">
+                        How long is each side?
+                    </label>
+                    <input id="inputCuadrado" type="number" />
+                    <div class="button__container">
+                        <button type="button" onclick="calcularAreaCuadrado()" class="button orangeprimary">
+                            Area
+                        </button>
+                        <button type="button" onclick="
+                        calcularPerimetroCuadrado()" class="button orangesecondary">
+                            Perimeter
+                        </button>
+                    </div> 
+                </form>
+                <div class="answer__container">
+                    <p>Your result is: </br></p>
+                    <p class="answer__container--text-orange" id="squareResult"></p>
+                </div>
+            </section>
+            <section class="problems__container">
+                <h3 class="orange__title">Calculate the Area and Perimeter of a triangle</h3>
+                <div class="triangle__container">
+                </div>
+                <form action="">
+                    <label for="inputTriangulo">
+                        Write the sides, base and heigth of your triangle.
+                    </label>
+                    <input id="inputTrianguloA" type="number" placeholder="Side A"/>
+                    <input id="inputTrianguloB" type="number" placeholder="Side B"/>
+                    <input id="inputTrianguloBase" type="number" placeholder="Base"/>
+                    <input id="inputTrianguloAltura" type="number" placeholder="Height"/>
+                    <div class="button__container">
+                        <button type="button" onclick="calcularAreaTriangulo()" class="button orangeprimary">
+                            Area
+                        </button>
+                        <button type="button" onclick="calcularPerimetroTriangulo()" class="button orangesecondary">
+                            Perimeter
+                        </button>
+                    </div>
+                </form>
+                <div class="answer__container">
+                    <p>Your result is: </br></p>
+                    <p class="answer__container--text-orange" id="triangleResult"></p>
+                </div>    
+            </section>
+            <section class="problems__container">
+                <h3 class="orange__title">Calculate the Area, Perimeter and Diameter of a circle</h3>
+                <div class="circle__container">
+                </div>
+                <form action="">
+                    <label for="inputCirculo">
+                        How much is the radius of your circle?
+                    </label>
+                    <input type="number" id="inputCirculoRadio"
+                    placeholder="radius">
+                    <div class="button__container">
+                        <button type="button" onclick="calcularAreaCirculo()" class="button orangeprimary">
+                            Area
+                        </button>
+                        <button type="button" onclick="calcularPerimetroCirculo()" class="button orangesecondary">
+                            Perimeter
+                        </button>
+                    </div>
+                    <button type="button" onclick="calcularDiametroCirculo()" class="button orangeprimary">
+                        Diameter
+                    </button>     
+                </form>
+                <div class="answer__container">
+                    <p>Your result is: </br></p>
+                    <p class="answer__container--text-orange" id="circleResult"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <a href="https://github.com/agustinbaigorria27">Github</a>
+                <a href="https://www.linkedin.com/in/agustin-baigorria-b499851ba/">Linkedin</a>
+                <a href="https://twitter.com/Agustin74423711">Twitter</a>
+            </ul>
+        </nav>
+    </footer>
+<script src="./figuras.js"></script>
+</body>
+</html>

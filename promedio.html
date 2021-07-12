@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculate mean, median and mode</title>
+</head>
+<body>
+    <header>
+        <div class="header__title">
+            <h1>Calculate mean, median and mode</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="./index.html">Home</a>
+                <a class="orange-text" href="./figuras.html">Project1</a>
+                <a class="yellow-text" href="./descuentos.html">Project2</a>
+                <a class="green-text" href="./mediageometrica.html">Project4</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main pink">
+        <section class="problems__container">
+            <h2 class="pink__title">Mean, median and mode</h2>
+            <form action="">
+                <label for="inputData">Enter your data.</label>
+                <input id="inputData" type="text" placeholder="Ex: 20, 12, 120, 021"/>
+                <div class="button__container">
+                    <button type="button" class="button pinkprimary" onclick="calcularMediaAritmetica()">
+                        Mean
+                    </button>
+                    <button type="button" class="button pinksecondary" onclick="calcularMediana()">
+                        Median
+                    </button>
+                </div> 
+                <button type="button" class="button pinkprimary" onclick="calcularModa()">
+                    Mode
+                </button>
+            </form>
+            <div class="answer__container">
+                <p>Your result is: </br></p>
+                <p class="answer__container--text-pink" id="resultData"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <a href="https://github.com/agustinbaigorria27">Github</a>
+                <a href="https://www.linkedin.com/in/agustin-baigorria-b499851ba/">Linkedin</a>
+                <a href="https://twitter.com/Agustin74423711">Twitter</a>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./promedio.js"></script>
+</body>
+</html>

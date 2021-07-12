@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Percentages and discounts</title>
+</head>
+<body>
+    <header>
+        <div class="header__title">
+            <h1>Percentages and discounts</h1>   
+        </div>
+        <nav>
+            <ul>
+                <a href="./index.html">Home</a>
+                <a class="orange-text" href="./figuras.html">Project1</a>
+                <a class="pink-text" href="./promedio.html">Project3</a>
+                <a class="green-text" href="./mediageometrica.html">Project4</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main yellow">
+        <section class="problems__container">
+            <img src="./assets/precio-descuento.png" alt="Image of discount">
+            <h2 class="yellow__title">Calculate the total price of your products after discount</h2>
+            <form>
+                <label for="inputPrice">Write the price of your product.</label>
+                <input id="inputPrice" type="number"/>
+    
+                <label for="inputCoupon">Write the coupon of discount for your product: </label>
+                <input id="inputCoupon" type="text"/>
+                <button type="button" onclick="onClickPriceDiscount()" class="button yellowprimary">
+                    Discount
+                </button>
+                
+            </form>
+            <div class="answer__container">
+                <p>Your result is: </br></p>
+                <p class="answer__container--text-yellow" id="resultPrice"></p>
+            </div>
+            <div class="coupon__container">
+                <p>¡Try our newest coupon with 20% of discount: "A523","B316"!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <a href="https://github.com/agustinbaigorria27">Github</a>
+                <a href="https://www.linkedin.com/in/agustin-baigorria-b499851ba/">Linkedin</a>
+                <a href="https://twitter.com/Agustin74423711">Twitter</a>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./descuentos.js"></script>
+</body>
+</html>

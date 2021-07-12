@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --soft-green: #a5a58d;
+    --dark-green: #6b705c;
+    --soft-orange: #fec89a;
+    --dark-orange: #f0ad4e;
+    --soft-yellow: #ffe75e;
+    --dark-yellow: #ffd900;
+    --soft-pink: #ddbea9;
+    --dark-pink: #cb997e;
+}
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: nowrap;
+    margin: 0;
+    border-bottom: 1px solid #dedede;
+}
+header ul {
+    margin-top: 40px;
+    margin-right: 15px;
+}
+ul a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 1.9rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(38, 57, 77);
+    transition: 0.7s;
+}
+header ul a:hover {
+    transform: scale(1.3);
+    
+}
+.green-text {
+    color: var(--soft-green);
+}
+.green-text:hover {
+    color: var(--dark-green);
+}
+.pink-text {
+    color: var(--soft-pink);
+}
+.pink-text:hover {
+    color: var(--dark-pink);
+}
+.yellow-text {
+    color: var(--soft-yellow);
+}
+.yellow-text:hover {
+    color: var(--dark-yellow);
+}
+.orange-text {
+    color: var(--soft-orange);
+}
+.orange-text:hover {
+    color: var(--dark-orange);
+}
+.header__title {
+    font-size: 1.6rem;
+    margin-top: 25px;
+    color: rgb(38, 57, 77);
+}
+.main {
+    width: 100%;
+    height: calc(110vh - 100px);
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.index__main {
+    background-image: url('https://miro.medium.com/max/6300/1*LpbDW-kW6Jh85WFAFEKwlQ.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-right: 450px;
+}
+.index__main h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: rgb(38, 57, 77);;
+}
+.index__main p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--dark-green);
+}
+.green {
+    background: var(--soft-green);
+}
+.orange {
+    background: var(--soft-orange);
+}
+.yellow {
+    background: var(--soft-yellow);
+}
+.pink {
+    background: var(--soft-pink);
+}
+.main__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.square__container, .circle__container{
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--dark-orange);
+    background-color: var(--dark-orange);
+    margin: 15px auto;
+}
+.circle__container {
+    border-radius: 50%;
+}
+.triangle__container {
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-left: 50px solid var(--dark-orange);
+    border-bottom: 50px solid var(--dark-orange);
+    margin: 15px auto;
+    
+}
+.problems__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 40px 30px;    
+    min-width: 300px;
+    max-width: 400px;
+    margin-right: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.green__title {
+    font-size: 1.8rem;
+    color: var(--dark-green);
+}
+.green__title ~ p {
+    margin: 10px;
+    font-size: 1.6rem;
+    color: gray;
+}
+.orange__title {
+    font-size: 1.8rem;
+    color: var(--dark-orange);
+}
+.yellow__title {
+    font-size: 1.8rem;
+    color: var(--dark-yellow);
+    margin-bottom: 30px;
+}
+.pink__title {
+    font-size: 1.8rem;
+    color: var(--dark-pink);
+    margin-bottom: 30px;
+}
+.problems__container label{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.problems__container img {
+    width: 200px;
+    margin: 10px 0 20px;
+    border-radius: 30%;
+}
+.problems__container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.problems__container input {
+    border-bottom: 1px solid #dedede;
+    background: transparent;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    margin: 0 5px 10px 5px; 
+}
+.problems__container input:focus{
+    outline: none;
+    outline-offset: 0;
+}
+input {
+    border: 0;
+}
+.problems__container .button__container {
+    gap: 16px;
+    display: flex;
+}
+.button {
+    margin-bottom: 5px;
+    padding: 6px 12px;
+    border-radius: 7px;
+    border: 2px solid;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+.button:hover{
+    transform: scale(1.03);
+    box-shadow: 4px 2px #888888;
+}
+.greenprimary{
+    background-color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+    color: whitesmoke;
+    width: 100%;
+}
+.yellowprimary {
+    background-color: var(--dark-yellow);
+    border: 2px solid var(--dark-yellow);
+    color: black;
+    width: 100%;
+}
+.orangeprimary {
+    background-color: var(--dark-orange);
+    border: 2px solid var(--dark-orange);
+    color: white;
+    width: 100%;
+}
+.orangesecondary {
+    border: 2px solid var(--dark-orange);
+    color: var(--dark-orange);
+}
+.pinkprimary {
+    background-color: var(--dark-pink);
+    border: 2px solid var(--dark-pink);
+    color: white;
+    width: 100%;
+}
+.pinksecondary {
+    border: 2px solid var(--dark-pink);
+    color: #cb997e;
+}
+.answer__container {
+    width: 100%;
+    height: 100px;
+    padding: 3px 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.answer__container p {
+    font-size: 1.4rem;
+}
+.answer__container--text-green {
+    color: var(--dark-green);
+}
+.answer__container--text-orange {
+    color: var(--dark-orange);
+}
+.answer__container--text-yellow {
+    color: var(--dark-yellow);
+}
+.answer__container--text-pink {
+    color: var(--dark-pink);
+}
+
+/* Coupon container */
+
+.coupon__container {
+    position: absolute;
+    width: 90%;
+    top: -25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: var(--dark-yellow);
+}
+.coupon__container p {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: white;
+}
+footer {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    background: #dedede;
+}
+footer a:hover {
+    border-bottom: 1px solid rgb(38, 57, 77);
+    transition: 1s;
+}
